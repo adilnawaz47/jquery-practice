@@ -235,4 +235,41 @@ $(document).ready(function () {
       console.log(data2);
       console.log($("#nametxt").attr("data-sid"));
   });
+
+  // Set image attributes
+
+  $("#setImageattribute").click(function () {
+     $("#img-id").attr("src", "image/photo1.jpg");
+   });
+
+   // Add css
+   $("#addclass").click(function () {
+      $("p").addClass("Myclass");
+   });
+   // Remove css
+   $("#removeclass").click(function () {
+      $("p").removeClass("Myclass");
+   });
+   // Toggle css
+   $("#toggleclass").click(function () {
+      $("p").toggleClass("Myclass");
+   });
+
+   // Toggle css
+   $("#colorclass").click(function () {
+      $("p").toggleClass("Myclass");
+   });
+
+   // Get css property value
+   let color = $("#div-id").css("color");
+   console.log(color);
+
+   // set css property
+   $("#divid").click(function () {
+      $("#div-id").css("font-size", 50);
+   });
+   // set multiple css property
+   $("#multiplecss").click(function () {
+      $("#div-id").css({"font-size": 50, "color":"red", "background-color":"purple"});
+   });
 });
